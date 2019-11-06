@@ -13,14 +13,13 @@
 //
 // examplePlugin(config)
 //
-// Personally, I think this is not a great pattern -- it would be better to
-// have all plugins have the capacity to take options, but if they have none,
-// just call without arguments as such:
+// This is not a great pattern -- it would be better to have all plugins have the
+// capacity to take options, but if they have none, just call without arguments as such:
 //
 // examplePlugin()(config)
 //
-// But this is now how the nextjs authors have chosen to do things. I would
-// propose that within HashiCorp, our plugins should follow the last pattern --
+// But this is not how the nextjs authors have chosen to do things. I would
+// propose that going forward, plugins should follow the last pattern --
 // always allowing for options whether or not they currently take them.
 //
 // I should also note that official next.js plugins typically nest two arrow
